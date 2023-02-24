@@ -13,6 +13,21 @@ from .forms import EmailForm
 def homepage(request):
 	return render(request, "RandolphInsurance/home.html")
 
+def customer_center(request):
+     return render(request, "RandolphInsurance/customer_center.html")
+
+def auto_insurance(request):
+     return render(request, "RandolphInsurance/auto_insurance.html")
+
+def home_insurance(request):
+     return render(request, "RandolphInsurance/home_insurance.html")
+
+def business_insurance(request):
+     return render(request, "RandolphInsurance/business_insurance.html")
+
+def life_insurance(request):
+     return render(request, "RandolphInsurance/life_insurance.html")
+
 
 class EmailAttachementView(View):
     form_class = EmailForm

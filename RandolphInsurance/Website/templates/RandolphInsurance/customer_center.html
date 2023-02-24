@@ -1,0 +1,630 @@
+{% extends "RandolphInsurance/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+<div>
+    <div class="d-flex align-items-center firstsection" data-aos="fade-up" style="padding-bottom: 20rem">
+        <div class="container container-fluid">
+            <div style="text-align: center">
+                <h2>Policy Service Center</h2>
+                <br>
+                <h3>Find answers for all carrier related issues</h3>
+                <br>
+
+                <div class="ropdown">
+    
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" onclick="myFunction()" style="width: 50vw;">
+                    <div id="myDropdown" class="ropdown-content">
+                        <a href="#" >
+                            <div class="row" onclick="searchbar('erie-insurance')">
+                                <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                                    <img src="\Website\files\userimages\Logo-Erie-Insurance.webp"  class="img-fluid testimonial-img" alt="" >
+                                    
+                                </div>
+                                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                    <p>Erie Insurance</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" >
+                            <div class="row" onclick="searchbar('progressive-insurance')">
+                                <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                                    <img src="\Website\files\userimages\2560px-Logo_of_the_Progressive_Corporation.svg.png"  class="img-fluid testimonial-img" alt="" >
+                                    
+                                </div>
+                                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                    <p>Progressive Insurance</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" >
+                            <div class="row" onclick="searchbar('metlife-insurance')">
+                                <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                                    <img src="\Website\files\userimages\2560px-MetLife_logo.svg.png"  class="img-fluid testimonial-img" alt="" >
+                                    
+                                </div>
+                                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                    <p>Metlife Insurance</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" >
+                            <div class="row" onclick="searchbar('travelers-insurance')">
+                                <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                                    <img src="\Website\files\userimages\NicePng_citi-logo-png_1403466.png"  class="img-fluid testimonial-img" alt="" >
+                                    
+                                </div>
+                                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                    <p>Travelers Insurance</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" >
+                            <div class="row" onclick="searchbar('bristolwest-insurance')">
+                                <div class="col-lg-3 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                                    <img src="\Website\files\userimages\bristol-west-logo.png"  class="img-fluid testimonial-img" alt="" >
+                                    
+                                </div>
+                                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                    <p>Bristol West Insurance</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Erie Help-->
+    <div class="policy-help container" id="erie-insurance" >
+        <img src="\Website\files\userimages\Logo-Erie-Insurance.webp"  class="img-fluid testimonial-img" alt="" style="height: 100px; margin-bottom: 2rem;">
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Location</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px;">100 Erie Insurance Place</p>
+                <p>Erie, PA 16530</p>
+                <a href="https://www.erieinsurance.com/">www.erieinsurance.com</a>
+            </div>
+        </div>
+        
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Customer Service</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a href="https://www.erieinsurance.com/Account/Login/Idp?client_data=SecurityDevice&post_url=https%3A%2F%2Fcustsso.erieinsurance.com%2Fmy.policy" >Account Login</a></p>
+                <p><b>Erie Insurance Customer Service:</b>(800) 458-0811</p>
+                <a href="www.erieinsurance.com">www.erieinsurance.com</a>
+            </div>
+        </div>
+  
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Claims</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://www.erieinsurance.com/support-center/claims">Erie Claims</a></p>
+                <p><b>Claims Phone#:</b> (800) 367-3743</p>
+                <p><b>24/7 Roadside Service (AGERO):</b> (888) 295-5060</p>
+                <p><b>ERIEGlass (Auto Glass Only):</b> (800) 552-3743</p>
+                <p><b>Fraud Finders (To Report Fraud)</b> (800) 368-6696</p>
+            </div>
+        </div>
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Billing</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://www.erieinsurance.com/PaymentCenterWeb/BillPay/Payment/BillPayment/">Pay Your Bill</a></p>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- Progressive Help-->
+    <div class="policy-help container" id="progressive-insurance" >
+        <img src="\Website\files\userimages\2560px-Logo_of_the_Progressive_Corporation.svg.png"  class="img-fluid testimonial-img" alt="" style="width: 200px; margin-bottom: 2rem;">
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Location</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px;">Dept. 0561</p>
+                <p>Carol Stream, IL 60132-0561
+                </p>
+                <a href="https://www.progressive.com/">www.progressive.com</a>
+            </div>
+        </div>
+        
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Customer Service</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a href="https://www.progressive.com/manage-policy/" >Manage Your Policy</a></p>
+                <p><b>Service:</b>888-671-4405</p>
+                <p><b>Customers In California:</b>(800) 300-3693</p>
+            </div>
+        </div>
+  
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Claims</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://www.progressive.com/claims/">Progressive Claims</a></p>
+                <p><b>Claims/Roadside Assistance:</b>  1-800-776-4737</p>
+ 
+            </div>
+        </div>
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Billing</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://account.apps.progressive.com/access/login">Pay Your Bill</a></p>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- Metlife Help-->
+    <div class="policy-help container" id="metlife-insurance" >
+        <img src="\Website\files\userimages\2560px-MetLife_logo.svg.png"  class="img-fluid testimonial-img" alt="" style="width: 200px; margin-bottom: 2rem;">
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Location</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        
+        <div class="content">
+            <div>
+
+                <p style="padding-top: 10px;"><a href="https://www.metlife.com/#">www.metlife.com</a></p>
+            </div>
+        </div>
+        
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Customer Service</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px;"><b>Service:</b>1 (800) 638-5433</p>
+                
+            </div>
+        </div>
+  
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Claims</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                
+                <p style="padding-top: 10px"><b>Claims Phone#:</b>  1-800-854-6011</p>
+ 
+            </div>
+        </div>
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Billing</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://account.apps.progressive.com/access/login">Pay Your Bill</a></p>
+                <br>
+                <p><b>Send Payments:</b></p>
+                <p>MetLife</p>
+                <p>PO Box 371487</p>
+                <p>Pittsburgh, PA 15250-7487</p>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>    
+    <!-- Travelers Help-->
+    <div class="policy-help container" id="travelers-insurance" >
+        <img src="\Website\files\userimages\NicePng_citi-logo-png_1403466.png"  class="img-fluid testimonial-img" alt="" style="width: 200px; margin-bottom: 2rem;">
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Location</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px;">
+                    PO BOX 660307
+                </p>
+                <p>
+                    Dallas, TX 75266-0307
+                </p>
+                <p ><a href="https://www.travelers.com/">www.travelers.com</a></p>
+            </div>
+        </div>
+        
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Customer Service</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <a href="https://selfservice.travelers.com/login/#/"><p style="padding-top: 10px;">Login</p></a>
+                <p ><b>Service:</b> 800-252-4633</p>
+                
+            </div>
+        </div>
+  
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Claims</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <a href="https://www.travelers.com/claims/" ><p style="padding-top: 10px">File claim online</p></a>
+                <p ><b>Claims Phone#:</b> (800) 252-4633</p>
+ 
+            </div>
+        </div>
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Billing</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://www.travelers.com/pay-your-bill.aspx?lob=pi">Pay Your Bill</a></p>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- Bristol West Help-->
+    <div class="policy-help container" id="bristolwest-insurance" >
+        <img src="\Website\files\userimages\bristol-west-logo.png"  class="img-fluid testimonial-img" alt="" style="width: 200px; margin-bottom: 2rem;">
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Location</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px;">
+                    Rockside Center III, 5990 West Creek Road
+                </p>
+                <p>
+                    Independence, OH 44131
+                </p>
+                <p ><a href="https://www.bristolwest.com/">www.bristolwest.com</a></p>
+            </div>
+        </div>
+        
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Customer Service</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <a href="https://selfservice.travelers.com/login/#/"><p style="padding-top: 10px;">Login</p></a>
+                <p ><b>Service:</b> 800-252-4633</p>
+                
+            </div>
+        </div>
+  
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Claims</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <a href="https://www.bristolwest.com/home/claims" ><p style="padding-top: 10px">File claim online</p></a>
+                <p ><b>Claims Phone#:</b> (800) 274-7865</p>
+ 
+            </div>
+        </div>
+        <button type="button" class="collapsible" >
+            <div class="row" style="font-size: 20px">
+                <div class="col-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    <a><iconify-icon icon="mdi:question-mark-circle-outline" style="margin-right: 5%"></iconify-icon>Billing</a>
+                    
+                    
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" >
+                    
+                </div>
+
+                <div class="col-lg-1 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"  >
+                    <iconify-icon icon="fe:drop-down" style="margin-left: 80%"></iconify-icon>
+                </div>
+                
+            </div>
+        </button>
+        <div class="content">
+            <div>
+                <p style="padding-top: 10px"><a  href="https://www.bristolwest.com/nologin?type=pay">Pay Your Bill</a></p>
+                <p><b>Billing:</b> (888) 888-0080</P>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>        
+</div>
+
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="{% static 'RandolphInsurance/main.js' %}"></script>
+    <script src="{% static 'RandolphInsurance/tester.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends "RandolphInsurance/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="main">
+    <section id="gallery" class="gallery" data-aos="fade-up">
+        <div class="container">
+  
+          <div style="text-align: center">
+            <h1><b>The Neccessity Of Liability Insurance</b></h1>
+            <h5>
+                Liability insurance protects you financially from the dangers posed by liability risks. It is a neccessary coverage that is provided across most types of insurance.
+            </h5>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'auto_insurance' %}#auto_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Auto</h1>
+                  <img src="\Website\files\userimages\pexels-cottonbro-studio-8388229.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="#home_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Home</h1>
+                  <img src="\Website\files\userimages\pexels-binyamin-mellish-186077.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'business_insurance' %}#business_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Business</h1>
+                  <img src="\Website\files\userimages\pexels-pixabay-159306.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'life_insurance' %}#life_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Life</h1>
+                  <img src="\Website\files\userimages\pexels-david-alberto-carmona-coto-1151418.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+  
+          </div>
+        </div>
+        <div id="home_ins">
+  
+        </div>
+    </section><!-- End Gallery Section -->
+        <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="section-title" style="text-align: center;" >
+            <h1><b>Home Insurance</b></h1>
+            <p>
+                Having the proper home insurance is essential to minimizing your risk when owning a home. Make sure you and your family are protected in the event of an accident.
+                Take a look at the required coverages and feel free to ask us questions!
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:home" style="color: #ff689b;"></iconify-icon></div>
+              <h4 class="title"><a href="">Dwelling</a></h4>
+              <p class="description">Make sure you protect your investment by insuring your home for the cost of replacement. Having the proper coverage will ensure that you can replace your home in the event of a covered peril. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+                <div class="icon"><iconify-icon icon="material-symbols:personal-injury" style="color: #e9bf06;"></iconify-icon></div>
+                <h4 class="title"><a href="">Personal Property</a></h4>
+                <p class="description">Protect your personal property up to a specified amount with the personal property coverage.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+            <div class="icon"><iconify-icon icon="material-symbols:garage-home" style="color: #3fcdc7;"></iconify-icon></div>
+                <h4 class="title"><a href="">Other Structures</a></h4>
+                <p class="description">Structures that are not attached to your home, but are on your property can be covered with this coverage. Such structures would include a shed, detached garage, gazebo, etc. </p>
+                <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="mdi:briefcase-check" style="color:#41cf2e;"></iconify-icon></div>
+              <h4 class="title"><a href="">Liability</a></h4>
+              <p class="description">Cover yourself in case you are liable for damages done to another party. In the event of an accident at your home or somewhere else, the liability coverage can protect you personally against any charges against you. </p>
+              <br>
+     
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="icon-park-outline:add-one" style="color: #d6ff22;"></iconify-icon></div>
+              <h4 class="title"><a href="">Endorsements</a></h4>
+              <p class="description">Extend the protections offered by the standard policy by getting an endorsement. An endorsement could give you protection for things not originally covered under the standard policy. Endorsements could be coverage for earthquake, farm equipment, sewer or drain backup, and more.</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="maki:jewelry-store" style="color: #4680ff;"></iconify-icon></div>
+              <h4 class="title"><a href="">Personal Articles</a></h4>
+              <p class="description">Personal Articles coverage can extend coverage to items such as coin collections, golf equipment, jewlery, stamp collections, and much more. Just provide an appraisal and we can cover the itmes for the appraised amount.</p>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    
+
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'RandolphInsurance/main.js' %}"></script>
+    <script src="{% static 'RandolphInsurance/tester.js' %}"></script>
+{% endblock %}

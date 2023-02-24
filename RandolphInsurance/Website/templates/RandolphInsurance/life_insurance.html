@@ -1,0 +1,88 @@
+{% extends "RandolphInsurance/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="main">
+    <section id="gallery" class="gallery" data-aos="fade-up">
+        <div class="container">
+  
+          <div style="text-align: center">
+            <h1><b>The Neccessity Of Liability Insurance</b></h1>
+            <h5>
+                Liability insurance protects you financially from the dangers posed by liability risks. It is a neccessary coverage that is provided across most types of insurance.
+            </h5>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'auto_insurance' %}#auto_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Auto</h1>
+                  <img src="\Website\files\userimages\pexels-cottonbro-studio-8388229.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'home_insurance' %}#home_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Home</h1>
+                  <img src="\Website\files\userimages\pexels-binyamin-mellish-186077.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'business_insurance' %}#business_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Business</h1>
+                  <img src="\Website\files\userimages\pexels-pixabay-159306.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="#life_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Life</h1>
+                  <img src="\Website\files\userimages\pexels-david-alberto-carmona-coto-1151418.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+  
+          </div>
+        <div id="life_ins">
+  
+  
+        </div>
+  
+        </div>
+        
+    </section>
+    <section id="services" class="services section-bg">
+        <div class="container">
+            
+            <h1 style="text-align: center;"><b>Life Insurance</b></h1>
+            <p>Secure the future of your loved ones with a life insurance policy that has their backs. However, selecting the right life insurance can be a difficult task. At the Randolph Insurance Agency we offer a variety of life insurance products designed to meet your needs.</p>
+            <p>By working together, we can find out what plan would work best for you. To get started, you can contact us today, or get a quote using Erie Insurance's Life Insurance Calculator</p>
+            <span><a type="button" href="https://www.erieinsurance.com/AA8788/life-insurance/#?AgentNumber=AA8788&utm_source=bf_erieagents&utm_medium=referral&utm_campaign=life_calc&utm_content=randolphinsuranceagency.com" class="btn " style="border-radius: 50px; background: blue; color: #fff;">Life Insurance Calculator</a></span>
+            
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'RandolphInsurance/main.js' %}"></script>
+    <script src="{% static 'RandolphInsurance/tester.js' %}"></script>
+{% endblock %}

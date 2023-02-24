@@ -9,6 +9,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
 
+        <!-- Favicons -->
+        <link href="\Website\files\userimages\Randolph Insurance Icon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +34,7 @@
         <header id="header" class="header fixed-top d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
         
-              <a href="#" class="logo d-flex align-items-center me-auto me-lg-0" style="text-decoration:none">
+              <a href="{% url 'homepage' %}" class="logo d-flex align-items-center me-auto me-lg-0" style="text-decoration:none">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <img src='\Website\files\userimages\Randolph Insurance Logo.png' alt="RIA Logo" >
@@ -38,27 +42,19 @@
         
               <nav id="navbar" class="navbar">
                 <ul>
-                  <li><a href="{% url 'homepage' %}" style="text-decoration:none">Home</a></li>
-                  <li><a href="#about" style="text-decoration:none">About</a></li>
-                  <li><a href="#menu" style="text-decoration:none">Menu</a></li>
-                  <li class="dropdown"><a href="#" style="text-decoration:none"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <li class="dropdown"><a href="#" style="text-decoration:none"><span>Insurance</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                      <li><a href="#" style="text-decoration:none">Drop Down 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Drop Down 2</a></li>
-                      <li><a href="#">Drop Down 3</a></li>
-                      <li><a href="#">Drop Down 4</a></li>
+                      <li><a href="{% url 'auto_insurance' %}#auto_ins" style="text-decoration:none">Auto</a></li>
+                      <li><a href="{% url 'home_insurance' %}#home_ins">Home</a></li>
+                      <li><a href="{% url 'business_insurance' %}#business_ins">Business</a></li>
+                      <li><a href="#">Life</a></li>
                     </ul>
                   </li>
-                  <li><a href="#contact" style="text-decoration:none">Contact</a></li>
+                  
+                  <li><a href="{% url 'homepage' %}#team" style="text-decoration:none">About Us</a></li>
+                  <li><a href="{% url 'customer_center' %}" style="text-decoration:none">Customer Center</a></li>
+
+                  <li><a href="#findus" style="text-decoration:none">Contact</a></li>
                 </ul>
               </nav><!-- .navbar -->
         
@@ -80,4 +76,134 @@
         {% endblock %}
     
     </body>
+    <footer>
+      <div class ="secondsection">
+        <div  data-aos="fade-up" id="findus" style="z-index: 999;">
+            <div style="text-align: center;">
+                <h1>Find Us!</h1>
+                <p> Feel free to stop by, give us a call, or send us an email. We would love to work with you!
+            </div>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.2042183018953!2d-75.42011378461319!3d40.11545217940124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c696a6dbdbd3c5%3A0xabd57c67981c5b8b!2s1151%20S%20Trooper%20Rd%2C%20Eagleville%2C%20PA%2019403!5e0!3m2!1sen!2sus!4v1676081214549!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" id="toprow">
+                    <div class="bullet-box" style="margin-left: 18%; margin-right: 18%">
+                        <div class="bullet">
+                            <iconify-icon icon="material-symbols:location-on" style="font-size: 32px;"></iconify-icon>
+                        </div>
+                        <h4 class="title">Location:</h4>
+                        <p class="description">
+                            1151 South Trooper Rd, Norristown, PA 19403
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" id="toprow">
+                    <div class="bullet-box"style="margin-left: 20%; margin-right: 20%">
+                        <div class="bullet" >
+                            <iconify-icon icon="material-symbols:mark-email-unread-sharp" style="font-size: 32px;"></iconify-icon>
+                        </div>
+                        <h4 class="title">Email:</h4>
+                        <p class="description">
+                            Theriagency@gmail.com
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" id="toprow">
+                    <div class="bullet-box" style="margin-left: 20%; margin-right: 20%">
+                        <div class="bullet">
+                            <iconify-icon icon="material-symbols:call-sharp" style="font-size: 32px;"></iconify-icon>
+                        </div>
+                        <h4 class="title">Call:</h4>
+                        <p class="description">
+                            610-635-1128
+                        </p>
+
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        
+            
+        
+      </div>
+      <div class="lastsection bg-dark">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-4">
+              
+              <h5>Contact</h5>
+              <p>The Randolph Insurance Agency<br> 1151 South Trooper Rd,<br> Norristown, PA 19403</p>
+              <br>
+              <p>Phone: 610-635-1128
+              <br>
+              <p>Mon-Fri: 9:00am-5:00pm<p>
+              
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <h5>Useful Links</h5>
+
+              <div class="arrowbullet">
+                <a href="{% url 'homepage' %}">
+                  Home
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="#">
+                  About Us
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="{% url 'auto_insurance' %}#auto_ins">
+                  Auto Insurance
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="{% url 'home_insurance' %}#home_ins">
+                  Home Insurance
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="{% url 'business_insurance' %}#business_ins">
+                  Business Insurance
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="#">
+                  Life Insurance
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="{% url 'customer_center' %}">
+                  Customer Center
+                </a>
+              </div>
+              <div class="arrowbullet">
+                <a href="{% url 'emailattachment' %}">
+                  Get A Quote
+                </a>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <h5>Our Social Networks</h5>
+              <p>Stay informed and follow the Randolph Insurance Agency on our social networks!</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
 </html>

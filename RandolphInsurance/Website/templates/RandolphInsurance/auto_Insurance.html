@@ -1,0 +1,147 @@
+{% extends "RandolphInsurance/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="main">
+    <section id="gallery" class="gallery" data-aos="fade-up">
+        <div class="container">
+  
+          <div style="text-align: center">
+            <h1><b>The Neccessity Of Liability Insurance</b></h1>
+            <h5>
+                Liability insurance protects you financially from the dangers posed by liability risks. It is a neccessary coverage that is provided across most types of insurance.
+            </h5>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="#auto_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Auto</h1>
+                  <img src="\Website\files\userimages\pexels-cottonbro-studio-8388229.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'home_insurance' %}#home_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Home</h1>
+                  <img src="\Website\files\userimages\pexels-binyamin-mellish-186077.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'business_insurance' %}#business_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Business</h1>
+                  <img src="\Website\files\userimages\pexels-pixabay-159306.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'life_insurance' %}#life_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Life</h1>
+                  <img src="\Website\files\userimages\pexels-david-alberto-carmona-coto-1151418.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+  
+          </div>
+  
+        </div>
+        <div id="auto_ins">
+        </div>
+    </section><!-- End Gallery Section -->
+        <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" data-aos="fade-up">
+      <div class="container" >
+
+        <div class="section-title" style="text-align: center;" >
+            <h1><b>Auto Insurance</b></h1>
+            <p>
+                Having the proper auto insurance is essential to minimizing your risk when you are on the road. Make sure you and your friends/family are protected in the event of an accident.
+                Take a look at the required coverages and feel free to ask us questions!
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:personal-injury" style="color: #ff689b;"></iconify-icon></div>
+              <h4 class="title"><a href="">Bodily Injury Liability/ Personal Property</a></h4>
+              <p class="description">In the event of an at-fault accident, this coverage will cover the bodily injury and property damages of the non at-fault party.</p>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:personal-injury" style="color: #e9bf06;"></iconify-icon></div>
+              <h4 class="title"><a href="">Uninsured/Underinsured Bodily Injury</a></h4>
+              <p class="description">Protect yourself and passengers from uninsured and or underinsured drivers. If you are hit by a driver without sufficient coverages, this coverage will cover your bodily injury costs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:medical-services" style="color: #3fcdc7;"></iconify-icon></div>
+              <h4 class="title"><a href="">First Party Benefits</a></h4>
+              <p class="description">These benefits include your medical payment limit, income loss, accidental death, and funeral benefit. </p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="mdi:briefcase-check" style="color:#41cf2e;"></iconify-icon></div>
+              <h4 class="title"><a href="">Full Tort/ Limited Tort</a></h4>
+              <p class="description">Determine whether you want the option to go after more money than what a the claims amount payed out. </p>
+              <br>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="game-icons:cracked-glass" style="color: #d6ff22;"></iconify-icon></div>
+              <h4 class="title"><a href="">Comprehensive Coverage</a></h4>
+              <p class="description">Protect your vehicle against all claims not collision, such as deer, glass, weather, etc.</p>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="fa-solid:car-crash" style="color: #4680ff;"></iconify-icon></div>
+              <h4 class="title"><a href="">Collision Coverage</a></h4>
+              <p class="description">Protect your vehicle againsta all collision claims, such as a car accident with another vehcile, collision with an object, car damage from pothole, etc.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    
+
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'RandolphInsurance/main.js' %}"></script>
+    <script src="{% static 'RandolphInsurance/tester.js' %}"></script>
+{% endblock %}

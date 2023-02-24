@@ -1,0 +1,151 @@
+{% extends "RandolphInsurance/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="main">
+    <section id="gallery" class="gallery" data-aos="fade-up">
+        <div class="container">
+  
+          <div style="text-align: center">
+            <h1><b>The Neccessity Of Liability Insurance</b></h1>
+            <h5>
+                Liability insurance protects you financially from the dangers posed by liability risks. It is a neccessary coverage that is provided across most types of insurance.
+            </h5>
+          </div>
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'auto_insurance' %}#auto_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Auto</h1>
+                  <img src="\Website\files\userimages\pexels-cottonbro-studio-8388229.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'home_insurance' %}#home_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Home</h1>
+                  <img src="\Website\files\userimages\pexels-binyamin-mellish-186077.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="#business_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Business</h1>
+                  <img src="\Website\files\userimages\pexels-pixabay-159306.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="{% url 'life_insurance' %}#life_ins" class="galleery-lightbox" data-gallery="gallery-item">
+                    <h1 style="text-align: center; color: black;">Life</h1>
+                  <img src="\Website\files\userimages\pexels-david-alberto-carmona-coto-1151418.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+  
+  
+          </div>
+        <div id="business_ins">
+  
+  
+        </div>
+  
+        </div>
+    </section><!-- End Gallery Section -->
+        <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="section-title" style="text-align: center;" >
+            <h1><b>Business Insurance</b></h1>
+            <p>
+                Having the proper business owners policy is essential to minimizing your risk performing business operations. Make sure you and your business are protected in the event of an accident.
+                Take a look at some of our most popular policies and feel free to ask us questions!
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:personal-injury" style="color: #ff689b;"></iconify-icon></div>
+              <h4 class="title"><a href="">Business Auto Insurance</a></h4>
+              <p class="description">This policy will cover your vehicles, drivers, and liability risks in the event of an accident.</p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:personal-injury" style="color: #e9bf06;"></iconify-icon></div>
+              <h4 class="title"><a href="">Workers' Compensation</a></h4>
+              <p class="description">Ensure that your worker's monetary needs are covered in the face of a covered peril.</p>
+              <br>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="material-symbols:medical-services" style="color: #3fcdc7;"></iconify-icon></div>
+              <h4 class="title"><a href="">Commerical Property Insurance</a></h4>
+              <p class="description">Insure the building, office equipment or inventory of your commercial property.  </p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="mdi:briefcase-check" style="color:#41cf2e;"></iconify-icon></div>
+              <h4 class="title"><a href="">Builderss Risk Insurance</a></h4>
+              <p class="description">Covers the building while its under construction as well as the matertials used for the job. </p>
+              <br>
+              <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="game-icons:cracked-glass" style="color: #d6ff22;"></iconify-icon></div>
+              <h4 class="title"><a href="">General Liability Insurance</a></h4>
+              <p class="description">General liabiliy insurance covers your liability resulting from a wide variety of exposures your business may encounter.</p>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><iconify-icon icon="fa-solid:car-crash" style="color: #4680ff;"></iconify-icon></div>
+              <h4 class="title"><a href="">Commercial Umbrella Insurance</a></h4>
+              <p class="description">In times where your current general liability insurance is not enough, commercial umbrella insurance will aid you in covering the excessive damages.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Services Section -->
+    
+
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'RandolphInsurance/main.js' %}"></script>
+    <script src="{% static 'RandolphInsurance/tester.js' %}"></script>
+{% endblock %}

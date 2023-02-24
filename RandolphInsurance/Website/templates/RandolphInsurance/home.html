@@ -3,11 +3,11 @@
 
 {% block body %}
 
-<div class="bg-image">
-    <div class="d-flex align-items-center firstsection" data-aos="fade-up">
-        <div class="container container-fluid">
+<div >
+    <div class="d-flex align-items-center firstsection" >
+        <div class="container container-fluid" data-aos="fade-up">
             <div class="row">
-                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" id="toprow">
                     <div>
                         <img src='\Website\files\userimages\Randolph Insurance Icon.png' alt="insurance" style="width: 70%">
                     </div>
@@ -24,17 +24,19 @@
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center secondsection" data-aos="fade-up">
-        <div class="container container-fluid">
+    <div class="d-flex align-items-center secondsection" >
+        <div class="container container-fluid" data-aos="fade-up">
             <div class="row">
                 <div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
                     <h1>The Randolph Insurance Agency</h1>
-                    <h4>The Randolph Insurance Agency is an independent insurance agency that serves clients in Norristown, Pennsylvania and the surrounding area.</h4>
+                    <h4>Our services include personal lines insurance and commercial lines insurance from Auto, Home, Business, and even life insurance. Read below to find out more and feel free to contact us! </h4>
                     <div class="bullet-box">
-                        <div class="bullet">
-                            <iconify-icon icon="ic:baseline-directions-car" style="font-size: 32px;"></iconify-icon>
-                        </div>
-                        <h4 class="title">Auto Insurance</h4>
+                        <a href="{% url 'auto_insurance' %}#auto_ins" >
+                            <div class="bullet">
+                                <iconify-icon icon="ic:baseline-directions-car" style="font-size: 32px;"></iconify-icon>
+                            </div>
+                        </a>
+                        <h4 class="title"><a>Auto Insurance</a></h4>
                         <p class="description">
                             Paying too much for auto insurance? With our flexible coverage options and expert service, 
                             you’ll know that your vehicle is getting the best protection possible.
@@ -42,9 +44,11 @@
 
                     </div>
                     <div class="bullet-box">
-                        <div class="bullet">
-                            <iconify-icon icon="material-symbols:home" style="font-size: 32px;"></iconify-icon>
-                        </div>
+                        <a href="{% url 'home_insurance' %}#home_ins" >
+                            <div class="bullet">
+                                <iconify-icon icon="material-symbols:home" style="font-size: 32px;"></iconify-icon>
+                            </div>
+                        </a>
                         <h4 class="title">Home Insurance</h4>
                         <p class="description">
                             Your home is your greatest investment, but you shouldn’t have to break the bank to insure it. Find out how much we can save you on your policy.
@@ -52,9 +56,11 @@
 
                     </div>
                     <div class="bullet-box">
-                        <div class="bullet">
-                            <iconify-icon icon="bxs:hard-hat" style="font-size: 32px;"></iconify-icon>
-                        </div>
+                        <a href="{% url 'business_insurance' %}#business_ins" >
+                            <div class="bullet">
+                                <iconify-icon icon="bxs:hard-hat" style="font-size: 32px;"></iconify-icon>
+                            </div>
+                        </a>
                         <h4 class="title">Business Insurance</h4>
                         <p class="description">
                             As a business owner, 
@@ -72,26 +78,36 @@
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center thirdsection" data-aos="fade-up">
-        <div class="container container-fluid">
+    <div class="d-flex align-items-center thirdsection" >
+        <div class="container container-fluid" data-aos="fade-up">
             <div style="text-align: center;">
-                <h1 style="color: white;">Life Insurance</h1>
+                <h1 style="color: white;">Specializing In Erie Insurance</h1>
                 <br>
                 <div style="margin-left: 20%; margin-right: 20%;">
-                    <h3 style="color: white;">Protect your family with affordable and flexible life insurance coverage from Erie Family Life. </h3>
+                    <h5 style="color: white;">Erie Insurance has been helping customers since 1925 with their auto, home, business, and life insurance needs.. </h5>
                     <br>
-                    <button type="button" class="btn btn-outline-light" style="border-radius: 50px">Life Insurance Calculator</button>
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <span><a type="button" href="https://www.erieinsurance.com/OnlineQuote/#?AgentNumber=AA8788&utm_source=bf_erieagents&utm_medium=referral&utm_campaign=get_quote_image&utm_content=randolphinsuranceagency.com" class="btn btn-outline-light" style="border-radius: 50px; width: 220px">Get An Auto Quote</a></span>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <span><a type="button" href="https://www.erieinsurance.com/PaymentCenterWeb/BillPay/Payment/BillPayment#?AgentNumber=AA8788&utm_source=bf_erieagents&utm_medium=referral&utm_campaign=pay_bill_image&utm_content=randolphinsuranceagency.com" class="btn btn-outline-light" style="border-radius: 50px; width: 220px">Pay Your Bill</a></span>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <span><a type="button" href="https://www.erieinsurance.com/AA8788/life-insurance/#?AgentNumber=AA8788&utm_source=bf_erieagents&utm_medium=referral&utm_campaign=life_calc&utm_content=randolphinsuranceagency.com" class="btn btn-outline-light" style="border-radius: 50px; width: 220px">Life Insurance Calculator</a></span>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             
         </div>
     </div>
     <div>
-        <section id="testimonials" class="testimonials section-bg" data-aos="fade-up">
-            <div class="container" >
-    
-                <div class="section-header">
-                    <p>We Have More Than One Carrier</p>
+        <section id="testimonials" class="testimonials section-bg2" >
+            <div class="container" data-aos="fade-up">
+                <div style="text-align: center;">
+                    <h1>We Have More Than One Carrier</h1>
                 </div>
         
                 <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -137,7 +153,17 @@
                         <div class="row gy-4 justify-content-center">
                             
                             <div class="col-lg-2 text-center">
-                            <img src="\Website\files\userimages\travelers-2.webp" class="img-fluid testimonial-img" alt="">
+                            <img src="\Website\files\userimages\NicePng_citi-logo-png_1403466.png" class="img-fluid testimonial-img" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                        <div class="row gy-4 justify-content-center">
+                            
+                            <div class="col-lg-2 text-center">
+                            <img src="\Website\files\userimages\bristol-west-logo.png" class="img-fluid testimonial-img" alt="">
                             </div>
                         </div>
                         </div>
@@ -149,7 +175,121 @@
     
             </div>
         </section><!-- End Testimonials Section -->
+        <section id="team" class="team section-bg" >
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-title" style="text-align: center">
+                <h2>Team</h2>
+                <p>
+                    The Randolph Insurance Agency is a family owned business. Founded by David Randolph in 2001, the agency was a one man business until Connie Randolph joined three years later.
+                    For the next 10 years the husband wife duo operated the business together until their son, David Randolph Jr, joined in 2019. Then, in the year 2023, the final member of the family, Morgan Randolph,
+                    joined to complete the team.
+                </p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-1 col-md-6 d-flex align-items-stretch">
+                </div>
+      
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="\Website\files\userimages\571877-waterfall-4k.jpg" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h4>David Randolph </h4>
+                      <span>Chief Executive Officer</span>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h4>Connie Randolph</h4>
+                      <span>Product Manager</span>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="\Website\files\userimages\David Headshot.jpg" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h4>David Randolph Jr</h4>
+                      <span>Agent</span>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h4>Morgan Randolph</h4>
+                      <span>Secrectary</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch" style="width: 20%">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="bi bi-twitter"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Baine</h4>
+                        <span>Company Dog</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-6 d-flex align-items-stretch">
+                </div>
+
+                
+      
+              </div>
+      
+            </div>
+        </section><!-- End Team Section -->
     </div>
+    
 </div>
 {% endblock %}
 
@@ -159,5 +299,5 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'RandolphInsurance/main.js' %}"></script>
 {% endblock %}
